@@ -78,7 +78,7 @@ h6 {
 /* /* PHP Email Form Messages
 ------------------------------*/
 
-/* .php-email-form .loading:before {
+.form-wrapper .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -87,10 +87,10 @@ h6 {
   margin: 3 10px -6px 0;
   border: 3px solid var(--accent-color);
   border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-} */
+  animation: form-wrapper-loading 1s linear infinite;
+}
 
-@keyframes php-email-form-loading {
+@keyframes form-wrapper-loading {
   0% {
     transform: rotate(0deg);
   }
@@ -1297,36 +1297,12 @@ section,
 }
 
 @media (max-width: 575px) {
-  .contact .php-email-form {
+  .contact .form-wrapper{
     padding: 20px;
   }
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 0;
-  color: var(--default-color);
-  background-color: var(--surface-color);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
-}
-
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
-}
-
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-.contact .php-email-form button[type=submit] {
+.contact .button[type=submit] {
   color: var(--default-color);
   background: var(--accent-color);
   font-weight: 400;
@@ -1341,6 +1317,60 @@ section,
   letter-spacing: 1px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .button button[type=submit]:hover {
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 10%);
+}
+.form-wrapper {
+  background-color: #000000;;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1500px;
+}
+
+.input-element, 
+.email-element, 
+.text-element {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #1a1a1a;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #1a1a1a;
+  color: #fafafa;
+}
+
+.text-element {
+  resize: vertical; /* Allows vertical resizing */
+  min-height: 100px; /* Minimum height for the textarea */
+}
+
+.button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 600px) {
+  .form-wrapper {
+      padding: 15px;
+  }
+
+  .input-element, 
+  .email-element, 
+  .text-element, 
+  .button {
+      font-size: 14px;
+  }
 }
