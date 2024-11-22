@@ -1581,6 +1581,14 @@ section,
   background-size:cover; 
   
   }
+  .map iframe {
+    width: 90.5%;
+    height: 450px;
+    border: none;
+    border-radius: 8px;
+}
+
+
   /* p {
   margin-left:3em;
   } */
