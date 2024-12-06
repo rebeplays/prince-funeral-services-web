@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Gallery - Prince Funeral Services</title>
+  <title>Services - Prince Funeral Services</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -25,138 +26,9 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
-<style>
-section{
-  min-height: 100vh;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-section::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  transition: all 0.4s ease;
-}
-section.active::before{
-  opacity: 1;
-}
-.gallery-container{
-  max-width: 800px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background: #fff;
-  padding: 5px 10px;
-  position: relative;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-}
- section.active .container{
-   visibility: hidden;
- }
-.gallery-container .main-video{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 100%;
-  z-index: 999;
-  opacity: 0;
-  pointer-events: none;
-  visibility: visible;
-  transition: all 0.4s ease;
-}
-section.active .gallery-container .main-video{
-  transform:translate(-50%, -50%) scale(1);
-  opacity: 1;
-  pointer-events: auto;
-}
-.gaallery-container .main-video video{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  outline: none;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-.gallery-container .main-video .close{
-  position: absolute;
-  top: -10px;
-  right: -36px;
-  font-size: 35px;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  z-index: 1000;
-  pointer-events: auto;
-  opacity: 0.6;
-}
-.gallery-container .main-video .close:hover{
-  opacity: 1;
-}
-.gallery-container .videos{
-  position: relative;
-  height: 200px;
-  width: calc(100% / 2 - 5px);
-  margin: 5px 0;
-  cursor: pointer;
-}
-.gallery-container .videos::before{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0,0,0,0.3);
-  pointer-events: none;
-}
-.gallery-container .videos video{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  outline: none;
-  pointer-events: none;
-}
-.gallery-container .videos i{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
-  color: #fff;
-  pointer-events: none;
-}
-@media (max-width: 750px) {
-  .container .main-video{
-    position: fixed;
-    width: 83%;
-  }
-  .container .videos{
-    width: 100%;
-    height: 320px;
-  }
-}
-@media (max-width: 600px) {
-  .container .videos{
-    width: 100%;
-    height: 250px;
-  }
-}
-
-
-</style>
-
-<body class="gallery-page">
+<body class="services-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
@@ -165,12 +37,11 @@ section.active .gallery-container .main-video{
         <img src="assets/img/logo.png" alt="">
         <!-- <h1 class="sitename">Prince Funeral Services</h1> -->
       </a>
-      
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home<br></a></li>
-          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="index.html" class="active">Home<br></a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="video.html">Video Gallery</a></li>
           <li><a href="services.html">Services</a></li>
@@ -195,9 +66,8 @@ section.active .gallery-container .main-video{
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Gallery</h1>
-              <p class="mb-0">Our gallery showcases the care and attention to detail we put into every service. From floral arrangements to personalized tributes, we work closely with families to honor their loved ones in meaningful ways.
-              </p>
+              <h1>Video Gallery</h1>
+              <p class="mb-0">We offer comprehensive funeral and cremation services, including tarpaulins, tents, chairs, tables, water dispensers, playing cards, photo frames, flowers, funeral lights, curtains, white balloons, and a funeral car (amenities may vary based on the service type). Cremation packages include the urn with a name sticker and optional viewing with the same amenities.</p>
             </div>
           </div>
         </div>
@@ -206,39 +76,314 @@ section.active .gallery-container .main-video{
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Video Gallery</li>
+            <li class="current">Services</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
-        
-        <div class="gallery-container">
-            <div class="main-video">
-                <video src="video1.mp4" autoplay muted controls></video>
-                <i class='bx bx-x close'></i>
-            </div>
-            <div class="videos">
-              <video src="video2.mp4"></video>
-              <i class='bx bx-play-circle'></i>
-            </div>
-            <div class="videos">
-              <video src="video3.mp4"></video>
-              <i class='bx bx-play-circle'></i>
-            </div>
-            <div class="videos">
-              <video src="video4.mp4"></video>
-              <i class='bx bx-play-circle'></i>
-            </div>
-            <div class="videos">
-              <video src="video5.mp4"></video>
-              <i class='bx bx-play-circle'></i>
-            </div>
-        </div> 
-    </section><!-- /Gallery Section -->
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Cremation Package</h2>
+        <p>Cremation Package</p>
+      </div><!-- End Section Title -->
+      <p style="text-align: center; margin: 0 auto; max-width: 800px; padding: 10px; font-size: 16px;">
+        Our cremation package includes cremation with an urn and name sticker. For families wishing to view the cremation remains, we also provide amenities such as tarpaulins, tents, chairs, tables, water dispensers with mineral water, playing cards, a picture frame with a photo, flowers, white balloons for the interment, and a funeral car.
+    </p>
+      <section id="gallery" class="gallery section">
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 justify-content-center">
 
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets/img/gallery/video1.jpg" class="img-fluid" alt="">
+                <div class="gallery-links d-flex align-items-center justify-content-center">
+                  <a href="video1.mp4"class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+  
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets/img/gallery/video2.png" class="img-fluid" alt="">
+                <div class="gallery-links d-flex align-items-center justify-content-center">
+                  <a href="video2.mp4" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+  
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets/img/gallery/video3.png" class="img-fluid" alt="">
+                <div class="gallery-links d-flex align-items-center justify-content-center">
+                  <a href="video3.mp4" class="glightbox preview-link"><i class="bi bi-play-circle-fill"></i></a>
+  
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets/img/gallery/4.jpg" class="img-fluid" alt="">
+                <div class="gallery-links d-flex align-items-center justify-content-center">
+                  <a href="assets/img/gallery/4.jpg" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+  
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets/img/gallery/5.jpg" class="img-fluid" alt="">
+                <div class="gallery-links d-flex align-items-center justify-content-center">
+                  <a href="assets/img/gallery/5.jpg" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+  
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets/img/gallery/6.jpg" class="img-fluid" alt="">
+                <div class="gallery-links d-flex align-items-center justify-content-center">
+                  <a href="assets/img/gallery/6.jpg" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+  
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Caskets</h2>
+        <p>For Viewing</p>
+      </div><!-- End Section Title -->
+      <p style="text-align: center; margin: 0 auto; max-width: 800px; padding: 10px; font-size: 16px;">
+        Our comprehensive funeral services include the following amenities for viewing: tarpaulins, tents, chairs, tables, water dispensers with mineral water, playing cards, a picture frame with a photo, flowers (depending on the type of casket), funeral lights (depending on the type of casket), and a funeral curtain (depending on the type of service). Additionally, we provide white balloons for the interment and a funeral car (depending on the type of casket).
+    </p>
+      <section id="gallery" class="gallery section">
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 justify-content-center">
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets/img/gallery/C1.jpg" class="img-fluid" alt="">
+                <div class="gallery-links d-flex align-items-center justify-content-center">
+                  <a href="assets/img/gallery/C1.jpg"class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+  
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets/img/gallery/C2.jpg" class="img-fluid" alt="">
+                <div class="gallery-links d-flex align-items-center justify-content-center">
+                  <a href="assets/img/gallery/C2.jpg" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+  
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets/img/gallery/C3.jpg" class="img-fluid" alt="">
+                <div class="gallery-links d-flex align-items-center justify-content-center">
+                  <a href="assets/img/gallery/C3.jpg" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+  
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets/img/gallery/C4.jpg" class="img-fluid" alt="">
+                <div class="gallery-links d-flex align-items-center justify-content-center">
+                  <a href="assets/img/gallery/C4.jpg" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+  
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets/img/gallery/C5.jpg" class="img-fluid" alt="">
+                <div class="gallery-links d-flex align-items-center justify-content-center">
+                  <a href="assets/img/gallery/C5.jpg" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+  
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets/img/gallery/C6.jpg" class="img-fluid" alt="">
+                <div class="gallery-links d-flex align-items-center justify-content-center">
+                  <a href="assets/img/gallery/C6.jpg" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+  
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets/img/gallery/C7.jpg" class="img-fluid" alt="">
+                <div class="gallery-links d-flex align-items-center justify-content-center">
+                  <a href="assets/img/gallery/C7.jpg" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+  
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets/img/gallery/C8.jpg" class="img-fluid" alt="">
+                <div class="gallery-links d-flex align-items-center justify-content-center">
+                  <a href="assets/img/gallery/C8.jpg" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+  
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+
+
+          </div>
+        </div>
+      </section>
+    </section> <!-- /Services Section -->
+ <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>What they are saying</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
 
   </main>
 
@@ -252,6 +397,7 @@ section.active .gallery-container .main-video{
         <a href=""><i class="bi bi-facebook"></i></a>
         <a href=""><i class="bi bi-instagram"></i></a>
       </div>
+
     </div>
 
   </footer>
@@ -273,29 +419,6 @@ section.active .gallery-container .main-video{
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <script>
-        const section = document.querySelector("section"),
-        mainVideo = document.querySelector(".main-video video"),
-         videos = document.querySelectorAll(".videos"),
-         close = document.querySelector(".close");
-    
-         for (var i = 0; i < videos.length; i++) {
-           videos[i].addEventListener("click", (e)=>{
-             const target = e.target;
-             section.classList.add("active");
-             target.classList.add("active");
-             let src = document.querySelector(".videos.active video").src;
-             mainVideo.src = src;
-    
-             close.addEventListener("click", ()=>{
-               section.classList.remove("active");
-               target.classList.remove("active");
-               mainVideo.src = "";
-             });
-           });
-         };
-      </script>
 
 </body>
 
