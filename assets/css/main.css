@@ -791,6 +791,8 @@ section,
   transition: all ease-in-out 0.3s;
   background: rgba(0, 0, 0, 0.6);
   z-index: 3;
+  
+
 }
 
 .gallery .gallery-links .preview-link,
@@ -800,6 +802,7 @@ section,
   transition: 0.3s;
   line-height: 1.2;
   margin: 30px 8px 0 8px;
+  
 }
 
 .gallery .gallery-links .preview-link:hover,
@@ -1572,8 +1575,8 @@ section,
   /*#videos */
   /*___________________________________ LAYOUT ___________________________________ */
   video { 
-  width:368px; 
-  height:656px;  
+  width:1080px; 
+  height:1920px;  
   background:transparent url('') no-repeat 0 0; 
   -webkit-background-size:cover; 
   -moz-background-size:cover; 
@@ -1582,8 +1585,8 @@ section,
   
   }
   .map iframe {
-    width: 90.5%;
-    height: 450px;
+    width:1080px; 
+    height:1920px; 
     border: none;
     border-radius: 8px;
 }
