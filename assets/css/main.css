@@ -96,7 +96,7 @@ p {
 }
 @media (max-width: 600px) {
   .logo {
-      margin-right: 10px; /* Reduce right margin on smaller screens */
+      margin-right: 20px; /* Reduce right margin on smaller screens */
   }
 }
 
