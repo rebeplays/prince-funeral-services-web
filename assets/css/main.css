@@ -7,19 +7,19 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #000000; /* Background color for the entire website, including individual sections */
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #fafafa; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
+  --heading-color: #000000; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #144B46; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #1a1a1a; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --surface-color: #000000; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #000000; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.5);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #1a1a1a; /* Used as the background color for mobile navigation menu */
+  --nav-color: #000000;  /* The default color of the main navmenu links */
+  --nav-hover-color: #000000; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #1a1a1a; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: rgba(255, 255, 255, 0.5); /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
@@ -70,7 +70,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
@@ -80,7 +81,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color:#000000;
+  background-color:#ffffff;
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -440,7 +441,7 @@ h6 {
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-#preloader {
+/* #preloader {
   display: flex;
   position: fixed;
   inset: 0;
@@ -542,7 +543,7 @@ h6 {
   100% {
     width: 0%;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Scroll Top Button
@@ -1295,10 +1296,9 @@ section,
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 10%);
 }
 .form-wrapper {
-  background-color: #000000;;
+  background-color: #fff;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   width: 90%;
   max-width: 1500px;
 }
@@ -1312,7 +1312,7 @@ section,
   border: 1px solid #1a1a1a;
   border-radius: 4px;
   font-size: 16px;
-  background-color: #1a1a1a;
+  background-color: #fff;
   color: #fafafa;
 }
 
