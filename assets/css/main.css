@@ -110,7 +110,7 @@ p {
 }
 
 .header .header-social-links a {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: var(--accent-color);
   padding-left: 6px;
   display: inline-block;
   transition: 0.3s;
